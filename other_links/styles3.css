@@ -1,0 +1,676 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Rubik;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2px 20px;
+    border-bottom: 2px solid #f56a00;
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f56a00;
+}
+.logo img{
+    width: 110px;
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    font-size: 25px;
+}
+
+.nav-item .icon {
+    margin-right: 5px;
+}
+
+.user-section {
+    display: flex;
+    flex-direction: cl;
+    align-items: center;
+    padding-right: 50px;
+}
+.user-section a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+
+.login {
+    display: flex;
+    background-color: white;
+    border: 2px solid #0077ff;
+    color: black;
+    padding-bottom: 10px;
+    padding-right:10px ;
+    padding-left: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.login-btn span {
+    position: relative;
+    top: 7px;
+    text-align: center;
+    color: #0077ff;
+}
+.nav-links a:hover{
+    color: #E27826;
+}
+.user-section .mytrip:hover{
+    color: #E27826;
+}
+.user-section .login a:hover{
+    color: #E27826;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #ffffff;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .user-section {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .form-group input,
+    .calendar,
+    select {
+        width: 100%;
+    }
+
+    .swap-icon {
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+}
+
+
+
+/* HEADING */
+.heading{
+    text-align: center;
+    padding: 10px;
+    background-color: #f56a00;
+    color: white;
+    position: relative;
+    top: 50px;
+
+}
+
+/* cabs */
+.cabs{
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.booking{
+    margin: 0px;
+    width: 40%;
+    height: 310px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 40px;
+}
+.radio-button{
+    margin-bottom: 10px;
+}
+
+label{
+    font-weight: 600;
+}
+.form-group label{
+    margin: 5px;
+}
+
+.form-group input{
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.date-time{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.date-time input{
+    width: 100%;
+}
+
+.booking .search-button{
+    position: relative;
+
+    left: 30%;
+    width: 250px;
+    height: 60px;
+    color: white;
+    font-weight: 800;
+    font-size: medium;
+    border-radius: 40px;
+    background: #E27826;
+    border: none;
+}
+
+.booking .search-button:hover{
+    background: #e6690a;
+    color: white;
+}
+
+.advertise img{
+    height: 30%;
+}
+
+/* cards */
+.right-container{
+    width: 40%;
+}
+
+.card-container {
+    display: flex;
+    
+    overflow-x: auto;
+    
+    gap: 10px;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card h3 {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* experience */
+.experince{
+    display: flex;
+    overflow-x: auto;
+}
+.exp {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+}
+.exp img {
+    padding: 2px;
+    width: 30px;
+    height: 30px;
+}
+.explorebutton{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #1053F4, #01BBFE);
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+    ;
+}
+.button span{
+    position:relative;
+    top: 5px;
+}
+
+.button:hover {
+    background-color: #3e8e41;
+  }
+
+/* Online cab Booking on goibibo */
+.first-container {
+    max-width:1350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Add this to make the content scrollable */
+    height: 500px; /* Set a fixed height for the box */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.first-container h1, h2, h3 {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.first-container p {
+    line-height: 1.6;
+    padding: 5px;
+}
+
+
+/* cabs-booking faq */
+.cabsbooking-container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    /* background-color: #f4f4f4; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+  }
+  
+  .cabsbooking-container h1 {
+    /* text-align: center; */
+    margin-bottom: 20px;
+  }
+  
+  .cabsbooking-container h2 {
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .cabsbooking-container a{
+    text-decoration: none;
+  }
+  
+  .cabsbooking-container p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+
+/* cab-routes cities  */
+.routes-box{
+    display: flex;
+    justify-content: center;
+}
+
+.routes-container {
+    width: 70%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.route-links{
+    display: flex;
+    justify-content: space-around;
+}
+.route-links ul li{
+    list-style: none;
+}
+.route-links a{
+    text-decoration: none;
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* footer */
+  footer{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  footer .pageinfo{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 0;
+    padding: 0px 200px;
+  }
+
+
+
+  .company,.ourproduct,.travel,.morelinks{
+    margin-bottom: 20px;
+  }
+  .links {
+    list-style: none;
+
+  }
+  .links li {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  .links a {
+    text-decoration: none;
+    color: #333;
+  }
+  .links a:hover {
+    color: #f56a00;
+  }
+
+  /* city-cntainer */
+  .city-container {
+    width: 70%;
+    background-color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .title {
+    
+    font-weight: bold;
+    margin-bottom: 10px;
+  } */
+   .list1::before{
+    content: "Cabs from Haridwar";
+    font-size: 10px;
+    font-weight: bold;
+   }
+
+   .list2::before{
+    content: "Cabs from Noida";
+    font-size: 10px;
+    font-weight: bold;
+   }
+
+   .list3::before{
+    content: "Cabs from Hydrerabad";
+    font-size: 10px;
+    font-weight: bold;
+   }
+
+   .list4::before{
+    content: "Cabs from Gandhinagar";
+    font-size: 10px;
+    font-weight: bold;
+   }
+
+   .list5::before{
+    content: "Cabs from Goa";
+    font-size: 10px;
+    font-weight: bold;
+   }
+
+   .list6::before{
+    content: "Cabs from Chandigarh";
+    font-size: 10px;
+    font-weight: bold;
+   }
+
+   
+  
+  .list {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    color: #C6C6C6;
+    cursor: pointer;
+  }
+  
+  .list li {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
+
+
+
+/* sonu footer icons*/
+.follow{
+    padding-top: 13px;
+    padding-bottom: 10px;
+    
+}
+
+.eco_class{
+    width: 90vw;
+  margin: 0 auto;
+  padding: 0 14px;
+}
+.iconss{
+    padding-top: 10px;
+    font-size: 25px;
+    color: #19b7a8;
+    width: 5px;
+    display: inline;
+}
+
+.iconss i{
+    padding-right: 5px;
+}
+
+.follow_headding{
+    font-weight: 900;
+}
+
+.iconss img{
+    width: 9rem;
+  height: 2rem;
+}
+
+.logo img{
+    width: 6rem;
+  height: 3rem;
+  /* padding-top: 30px; */
+}
+
+.eco_class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 33px;
+    flex-wrap: wrap;
+}
+
+hr{
+    width: 88rem;
+  margin: 0 auto;
+  color: antiquewhite;
+}
+
+.make_my_trip{
+    background-color: white;
+}
+
+.make_trip{
+    /* background-color: white; */
+    width: 90rem;
+  margin: 0 auto;
+  padding-bottom: 43px;
+}
+
+.make_trip img{
+    width: 57px;
+  height: 46px;
+  margin-left: 23px;
+}
+
+#my_trip{
+    width: 149px;
+  height: 54px;
+}
+hr{
+    border-top: 1px solid #C6C6C6;
+    
+}
+
+@media (max-width: 1200px) {
+    .navbar{
+        width: auto;
+    }
+    .cabs{
+        
+        flex-direction: column;
+        height: auto;
+    }
+    .right-container{
+        margin-top: 100px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation Classes */
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Existing CSS content */
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}

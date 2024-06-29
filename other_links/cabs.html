@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Tickets, Flights Booking at Lowest Airfare, Book Air Tickets-Goibibo</title>
+    <link rel="stylesheet" href="styles3.css">
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 48
+        }
+
+        <style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+</style>
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="assets/logo.png" alt="">
+            </div>
+            <div class="nav-links">
+                <a href="/index.html" class="nav-item"><span class="icon">✈️</span> Flights</a>
+                <a href="/other_links/hotels.html" class="nav-item"><span class="icon">🏨</span> Hotels</a>
+                <a href="/other_links/trains.html" class="nav-item"><span class="icon">🚆</span> Trains</a>
+                <a href="/other_links/cabs.html" class="nav-item"><span class="icon">🚗</span> Cabs</a>
+                <a href="/other_links/bus.html" class="nav-item"><span class="icon">🚌</span> Bus</a>
+                <a href="/other_links/holidays.html" class="nav-item"><span class="icon">🏖️</span> Holidays</a>
+                <a href="/other_links/forex.html" class="nav-item"><span class="icon">💱</span> Forex</a>
+                <a href="/other_links/login.html" class="nav-item"><span class="icon">🛡️</span> Insurance</a>
+            </div>
+            <div class="user-section">
+                <a href="/other_links/login.html">
+                    <span class="icon">🧳</span>
+                    <p>My Trips</p>
+                    <p>Mangage Booking</p>
+                
+                </a>
+                <button class="login">
+                    <a href="/other_links/login.html" class="login-btn">
+                        <span class="user material-symbols-outlined">
+                            account_circle
+                            </span>
+                        LOGIN / SIGNUP
+                    </a>
+                </button>
+            </div>
+            <div class="hamburger-menu">
+                <span class="hamburger-icon">&#9776;</span>
+            </div>
+        </nav>
+        <div class="heading animate-fade-in">
+            <h2>Book Online Cab</h2>
+        </div>
+        <div class="cabs animate-fade-in">
+            <div class="booking">
+                <div class="radio-button">
+                    <label class="radio-container">
+                        <input  type="radio" name="trip-type" checked>
+                        <span class="radio-label">OUTSTATION One-way</span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" name="trip-type">
+                        <span class="radio-label">Outstation Round trip</span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" name="trip-type">
+                        <span class="radio-label">Airport transfer</span>
+                    </label>
+                    <label class="radio-container">
+                        <input type="radio" name="trip-type">
+                        <span class="radio-label">Hourly Rental</span>
+                    </label>
+                    
+                </div>
+                
+                <form>
+                    <div class="form-group">
+                        <label for="pickup-location">From</label><br>
+                        <input type="text" id="pickup-location" name="pickup-location" placeholder="Enter Pickup location">
+                    </div>
+                    <div class="form-group">
+                        <label for="drop-location">To</label><br>
+                        <input type="text" id="drop-location" name="drop-location" placeholder="Enter Drop location">
+                    </div>
+                    <div class="date-time">
+                        <div class="form-group">
+                            <label for="pickup-date">Pickup Date</label>
+                            <input type="date" id="pickup-date" name="pickup-date">
+                        </div>
+                        <div class="form-group">
+                            <label for="pickup-time">Pickup Time</label>
+                            <input type="time" id="pickup-time" name="pickup-time">
+                    </div>
+                    </div>
+                </form>
+                
+
+                
+                <button class="search-button">
+                    SEARCH CABS
+                </button>
+            </div>
+            <div class="right-container">
+                <div class="advertise">
+                    <img src="https://gos3.ibcdn.com/GI_Cab_HourlyRental_dweb_Home_Banner_v2-1673515307.png" alt="">
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="https://gos3.ibcdn.com/offfer-1715765100.jpg" alt="Card Image">
+                        <h6>Outstation cabs start @ just ₹1000*. Check it out now!</h6>
+                        <p>26th June'24</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://gos3.ibcdn.com/offers-640X268-1715765194.jpg" alt="Card Image">
+                        <h6>FLAT 5% OFF* on airport cabs! Use code: GOT2GO</h6>
+                        <p>26th June'24</p>
+                    </div>
+                    <div class="card">
+                        <img src="https://gos3.ibcdn.com/top-1709707278.jpg" alt="Card Image">
+                        <h6>Outstation cabs start @ just ₹1000*. Check it out now!</h6>
+                        <p>26th June'24</p>
+                    </div>
+                </div>
+                <div class="experince">
+                    <div class="exp">
+                        <img src="https://gos3.ibcdn.com/per1-1612981526.png" alt="Trophy Icon">
+                        <span>Experienced and polite drivers</span>
+                    </div>
+                    <div class="exp">
+                        <img src="https://gos3.ibcdn.com/per2-1612981615.png" alt="Piggy Bank Icon">
+                        <span>Clean and comfortable cabs</span>
+                    </div>
+                    <div class="exp">
+                        <img src="https://gos3.ibcdn.com/per3-1612981660.png" alt="Icon 3">
+                        <span>24x7 Support</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="explorebutton animate-fade-in">
+            <button class="button">Explore More <span class="material-symbols-outlined">
+                arrow_drop_down_circle
+                </span></button>
+        </section>
+    </header>
+
+    <!-- online cab booking on goibibo -->
+    <div class="first-container animate-fade-in">
+        <h1>Online Cab Booking on Golbibo</h1>
+        <p>Most of the Indian tourists prefer travelling to their preferred destination via road. It is due to the fact that a road trip allows you to enjoy the scenic beauty at your own pace. Moreover, the comfort of travelling in a vehicle with your family and friends is unparalleled. You can opt for online cab booking that will make your journey hassle-free. You simply have to visit the GoIbibo portal and select a cab.</p>
+        <p>Due to the easy-to-use interface and quick menu options of GoIbibo, online cab booking is not a difficult process. In fact, cab booking is something which has become a part of our everyday life. You can also opt for intercity car rentals in order to visit other cities.</p>
+        <p>The online taxi booking process on GoIbibo can be completed within a couple of minutes. So, if you wish to customize your cab booking package, GoIbibo is your go-to website. All the car booking services available on GoIbibo are geared towards giving you the best-possible experience when it comes to cab booking.</p>
+
+        <h2>Book Your Cab Online</h2>
+        <p>When you choose us for your cab booking requirements, we offer you premium services, and most importantly, high reliability. Golbibo is considered one of the most popular car booking platforms. Besides that, you can also visit the website for train, flight, and bus tickets. The best part is you can get top-notch cars for your preferred destination.</p>
+        <p>Road trips are one of the most exciting ways to travel all across the country. There is so much to experience and explore. Golbibo ensures that your road trip is an enjoyable experience.</p>
+        <p>The process of booking a cab on Golbibo is pretty simple. You just need to log in to Golbibo's official website and provide all the required details. In order to book your cab, you have to fill in the city of your origin, the destination, your departure date and timings. Once all the details are filled, simply click on the 'Search' option.</p>
+        <p>On the portal, you will get a wide range of cab options available at different prices. The prices depend on a lot of factors such as the type of cab you are choosing, the in-car facilities provided, the route you are taking to travel as well as your date of journey. You can select a cab which meets your travel requirements.</p>
+
+        <h2>Book a Cab for an Exciting Road Trip</h2>
+        <p>Tourists enjoy the scenic beauty of nature, the smooth highway roads, studying the diverse cultures and tasting the lip-smacking local food once when you are on holiday. There is a lot you can explore on a road trip, and Golbibo is there to be your travel companion.</p>
+        <p>You can book outstation cab to visit popular tourist destinations such as Delhi, Manali, Mumbai and Naintal or the unexplored gems such as Khajuraho, Alleppey, Alibag and Tranquebar simply by booking an online cab booking. Planning a trip can be quite a hassle, but choose to make your online cab booking on Golbibo for an easier process. You can choose from a wide range of cabs such as hatchbacks, sedans, SUVs, MPVs, and more. You can also book an outstation cab for a one-way trip as well as a round trip.</p>
+        <p>In case you have any booking-related queries, you can reach out to the 24/7 customer service of GoIbibo and talk to the experts regarding your travel. While booking your outstation cab with us, you can also get assistance in discussing the itinerary and planning your trip. Moreover, the option of using the mobile app will further reduce the hassle of booking a cab. All the services offered by GoIbibo are available on a single click. Moreover, you can also get exciting discounts and offers if you make your bookings via GoIbibo.</p>
+
+        <h2>Choose GoIbibo for Online Cab Booking</h2>
+        <p>GoIbibo can make the process of online cab booking hassle-free. Below, we are mentioning some of the reasons why people choose us over and over again:</p>
+
+        <h2>Clean cars</h2>
+        <p>Hygiene is the top-most priority for GoIbibo. That’s why, they ensure that the cab you book is absolutely clean. Considering the Covid-19 situation, we ensure that every car is sanitized before the journey and all the safety protocols are followed thoroughly. The temperature of drivers is checked before every trip, and wearing masks is mandatory for the passengers as well as drivers.</p>
+
+        <h2>Transparent billing</h2>
+        <p>Be assured, when you choose GoIbibo for your cab booking requirements, the services offered are at the most reasonable rates. Besides that, GoIbibo also maintains 100% billing transparency. So, there are zero hidden charges involved from the beginning to end of your journey. You can choose from your preferred payment methods. Some of the payment options available on GoIbibo include debit card, credit card, net banking and UPI.</p>
+
+        <h2>Reliable services</h2>
+        <p>Every person is looking for a reliable experience that prioritizes their needs and concerns. That’s why, GoIbibo offers an unparalleled experience to users when they are making cab booking online. You can connect with the 24/7 customer support service of GoIbibo and resolve all your booking-related queries. From providing the best services to ensuring a safe trip, GoIbibo makes sure that your trip is enjoyable.</p>
+
+        <h2>Courteous chauffeurs</h2>
+        <p>Dealing with impolite people is difficult. An encounter with a rude person can ruin our entire trip. That’s why, GoIbibo makes sure that the chauffeur you get is polite and cooperative. You can find the top-rated drivers on GoIbibo who will make your journey smooth and your trip memorable.</p>
+
+        <h2>Road trip experts</h2>
+        <p>GoIbibo turns you into an expert in planning road trips. The easy access to all the travel services can help you plan your travel accurately. You can reach out to the customer centre of GoIbibo. Our team comprises experts who offer the best solutions for your queries. Therefore, cab booking with GoIbibo is always a hassle-free experience. Whether it is for outstation trips or an airport taxi, GoIbibo can meet all your travel requirements so that you can reach your desired destination safely. GoIbibo believes in assuring safety, reliability, and affordability to travelers.</p>
+
+    </div>
+
+
+
+
+
+        
+    <!-- cabs booking faq -->
+    <div class="cabsbooking-container animate-fade-in">
+        <h1>Cabs Booking FAQ</h1>
+      
+        <h2>How can I book cheap cabs online?</h2>
+        <p>Goibibo helps you with online cab booking at the best prices, comparatively much lower than the local vendors. Also you can use promo codes and offers on the Goibibo website & app on online cab booking to get extra discounts</p>
+      
+        <h2>What are the advantages of online taxi booking?</h2>
+        <p>Online taxi booking not only helps you with best prices but also helps you with the convenience of paying through multiple payment options (like Debit Card, Credit Card, eWallets etc.). You can easily compare prices and choose various categories of cabs like Hatchback cars, Sedan and SUV.</p>
+      
+        <h2>Why you should book cabs from Goibibo?</h2>
+        <p>From Goibibo you can get confirmed cheap cabs of your choice and budget. Expert and verified drivers will be taken care of your ride. Easy interface of booking with different payment modes available at Goibibo and finally with no hidden charges, Goibibo is the best option for online taxi booking.</p>
+
+        <h2>What are the best options available for cab booking?</h2>
+        <p>While booking cabs online through Goibibo, you can choose the car based on your requirement and preferences. You can book Hatchback like Indica, Swift, Sedan like Dzire, Etios and SUV like Innova, Ertiga.</p>
+
+        <h2>What kind of cabs you can book from Goibibo?</h2>
+        <p>You can book following kinds of cabs from Goibibo: airport cabs and intercity cabs / outstation cabs. You can book outstation cabs for both one-way transfers & round-trip transfers.</p>
+
+        <h2>What are the popular outstation cab booking routes?</h2>
+        <p>Some of the popular outstation cab booking routes are 
+            <a href="#">Pune to Mumbai cabs</a>,
+            <a href="#">Delhi to Jaipur cabs</a>,  
+            <a href="#">Delhi to Agra cabs</a>,
+            <a href="#">Pondicherry to Chennai cabs</a>,
+            <a href="#">Ahemdabad to Vadodara cabs</a>,
+            <a href="#">Bangalore to Mysore cabs</a> and
+            <a href="#">Mumbai to Pune Cabs</a>.
+        </p>
+
+        <h2>Do I need to register on Goibibo to book a cab online?</h2>
+        <p>No, you can successfully book the cab without registering on our website.</p>
+
+        <h2>How does it work?</h2>
+        <p>We ask you a few simple questions regarding your trip. We work with the best operators in your city to get you detailed quotations so that you get the best deal.</p>
+
+        <h2>What if the cab doesn't show up?</h2>
+        <p>If the vehicle you booked does not arrive, we will immediately issue a complete refund.</p>
+
+        <h2>Which cities are you operational in?</h2>
+        <p>We are currently operational in many cities such as Bangalore, Mumbai, Pune, Chennai, Hyderabad, Delhi, Ahmedabad, Madurai, Mysore, Visakhapatnam, Surat, Vadodara, Vijayawada, Coimbatore, Goa, Pondicherry, Erode, Ooty, Udaipur, Jaipur, Guwahati, Trichy, Kolkata, and many more.</p>
+
+        <h2>What happens if the vehicle breaks down?</h2>
+        <p>Since we work with the best operators, the vehicles are usually reliable. In case of a breakdown, it is the operator's responsibility to replace the vehicle during the journey.</p>
+
+        <h2>How are the Kilometers calculated?</h2>
+        <p>The 'Kilometers' are calculated based on the return trip distance between the boarding point and the destination.</p>
+
+        <h2>Can I book a cab without credit/card or net banking option?</h2>
+        <p>Yes, other payment options available are UPI(gpay, phone available) wallets (paytm,amazon pay), debit card.</p>
+
+        <h2>How is the total cab fare calculated for an intercity cab service?</h2>
+        <p>For outstation trips(intercity), mostly x kms included in fare. route wise charges will vary. Sometimes toll, state taxes might be included in the fare. certain cases, these won't be part of the original fare and user would have to pay at trip end whatever extra charges are applicable extra charges can be - Waiting charges Extra KMs charges Extra hours charges Night charges Airport Entry fee Airport Parking charges Toll charges State Tax Driver charges Parking charges</p>
+
+        <h2>How is the total cab fare/price calculated for a local cab service?</h2>
+        <p>4 packages available (4hrs & 40 kms, 8hrs & 80 kms, 12hrs & 120 kms, 24hrs & 300kms). extra kms & extra hours charges applicable if usage exceeds the package taken</p>
+
+        <h2>What are the payment terms?</h2>
+        <p>You can confirm your reservation by paying a small booking fee, typically up to to 25% of the base fare. The balance can be paid directly to us through online modes till two days before the start of the journey or to the operator in cash at the time of boarding.</p>
+
+        <h2>What if I need to cancel my trip?</h2>
+        <p>The cancellation policy is specific to each operator and is listed against the quotes on the quotations page.</p>
+
+        <h2>How are tolls & taxes calculated?</h2>
+        <p>Tolls and Interstate taxes are best estimates only. If these amounts are included in the fare, you'll be charged/reimbursed for any difference between the actuals and estimates, as applicable.</p>
+    </div>
+
+    <!-- routes -->
+    <div class="routes-box animate-fade-in">
+        <div class="routes-container">
+            <div class="section">
+                <h2>Top Cab Routes</h2>
+                <div class="route-links">
+                    <div class="firstsection-link">
+                        <ul>
+                            <li><a href="#">Delhi To Jaipur Cab</a></li>
+                            <li><a href="#">Delhi To Agra Cab</a></li>
+                            <li><a href="#">Mumbai To Pune Cab</a></li>
+                            <li><a href="#">Pune To Mumbai Cab</a></li>
+                            <li><a href="#">Delhi To Chandigarh Cab</a></li>
+                        </ul>
+                    </div>
+                    <div class="secondsection-link">
+                        <ul>
+                            <li><a href="#">Delhi To Dehradun Cab</a></li>
+                            <li><a href="#">Delhi To Haridwar Cab</a></li>
+                            <li><a href="#">Chandigarh To Shimla Cab</a></li>
+                            <li><a href="#">Chennai To Pondicherry Cab</a></li>
+                            <li><a href="#">Delhi To Mathura Cab</a></li>
+                        </ul>
+                    </div>
+                    <div class="thirdsection-link">
+                        <ul>
+                            <li><a href="#">Delhi To Haldwani Cab</a></li>
+                            <li><a href="#">Delhi To Manali Cab</a></li>
+                            <li><a href="#">Bangalore To Mysore Cab</a></li>
+                            <li><a href="#">Delhi To Rishikesh Cab</a></li>
+                            <li><a href="#">Jaipur To Delhi Cab</a></li>
+                        </ul>
+                    </div>
+                    <div class="fourthsection-link">
+                        <ul>
+                            <li><a href="#">Dehradun To Delhi Cab</a></li>
+                            <li><a href="#">Bhubaneswar To Puri Cab</a></li>
+                            <li><a href="#">Siliguri To Gangtok Cab</a></li>
+                            <li><a href="#">Delhi To Bareilly Cab</a></li>
+                        </ul>
+                    </div>
+                    <div class="fifthsection-link">
+                        <ul>
+                            <li><a href="#">Mysore To Coorg Cab</a></li>
+                            <li><a href="#">Mumbai To Goa Cab</a></li>
+                            <li><a href="#">Ahmedabad To Vadodara Cab</a></li>
+                            <li><a href="#">Bangalore To Hyderabad Cab</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Cab from Top Cities</h2>
+                <div class="route-links">
+                    <div class="firstsection-link">
+                        <ul>
+                            <li><a href="#">Delhi Taxi Services</a></li>
+                            <li> <a href="#">Goa Taxi Services</a></li>
+                            <li><a href="#">Bangalore Taxi Services</a></li>
+                            <li><a href="#">Chennai Taxi Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="secondsection-link">
+                        <ul>
+                            <li><a href="#">Hyderabad Taxi Services</a></li>
+                            <li><a href="#">Kolkata Taxi Services</a></li>
+                            <li><a href="#">Jaipur Taxi Services</a></li>
+                            <li><a href="#">Pune Taxi Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="thirdsection-link">
+                        <ul>
+                            <li><a href="#">Coimbatore Taxi Services</a></li>
+                            <li><a href="#">Indore Taxi Services</a></li>
+                            <li><a href="#">Mumbai Taxi Services</a></li>
+                            <li><a href="#">Visakhapatnam Taxi Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="fourthsection-link">
+                        <ul>
+                            <li><a href="#">Tirupati Taxi Services</a></li>
+                            <li><a href="#">Ahmedabad Taxi Services</a></li>
+                            <li><a href="#">Varanasi Taxi Services</a></li>
+                            <li><a href="#">Noida Taxi Services</a></li>
+                        </ul>
+                    </div>
+                    <div class="fifthsection-link">
+                        <ul>
+                            <li><a href="#">Patna Taxi Services</a></li>
+                            <li><a href="#">Chandigarh Taxi Services</a></li>
+                            <li><a href="#">Gurgaon Taxi Services</a></li>
+                            <li><a href="#">Raipur Taxi Services</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>Top Airport Cab Routes</h2>
+                <div class="route-links">
+                    <div class="firstsection-link">
+                        <ul>
+                            <li><a href="#">Cab From Bangalore Airport</a></li>
+                            <li><a href="#">Cab From Hyderabad Airport</a></li>
+                            <li><a href="#">Cab From Delhi Airport</a></li>
+                            <li><a href="#">Cab From Chennai Airport</a></li>
+                        </ul>
+                    </div>
+                    <div class="secondsection-link">
+                        <ul>
+                            <li><a href="#">Cab To Bangalore Airport</a></li>
+                            <li><a href="#">Cab To Ahmedabad Airport</a></li>
+                            <li><a href="#">Cab From Kolkata Airport</a></li>
+                            <li><a href="#">Cab From Amritsar Airport</a></li>
+                        </ul>
+                    </div>
+                    <div class="thirdsection-link">
+                        <ul>
+                            <li><a href="#">Cab From Chandigarh Airport</a></li>
+                            <li><a href="#">Cab To Chennai Airport</a></li>
+                            <li><a href="#">Cab From Jaipur Airport</a></li>
+                            <li><a href="#">Cab From Patna Airport</a></li>
+                        </ul>
+                    </div>
+                    <div class="fourthsection-link">
+                        <ul>
+                            <li><a href="#">Cab From Madurai Airport</a></li>
+                            <li><a href="#">Pune To Mumbai Airport Cab</a></li>
+                            <li><a href="#">Ernakulam Airport To Munnar Cab</a></li>
+                            <li><a href="#">Srinagar Airport To Gulmarg Cab</a></li>
+                        </ul>
+                    </div>
+                    <div class="fifthsection-link">
+                        <ul>
+                            <li><a href="#">Chandigarh To Delhi Airport Cab</a></li>
+                            <li><a href="#">Chennai Airport To Pondicherry Cab</a></li>
+                            <li><a href="#">Mumbai Airport To Thane Cab</a></li>
+                            <li><a href="#">Mumbai Airport To Pune Cab</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="animate-fade-in">
+        <div class="pageinfo">
+            <div class="ourproduct">
+                <h5>OUR PRODUCTS</h5>
+                <ul class="links">
+                    <li><a href="#">Domestic Hotels</a></li>
+                    <li><a href="#">International Hotels</a></li>
+                    <li><a href="#">Domestic Flights</a></li>
+                    <li><a href="#">International Flights</a></li>
+                    <li><a href="#">Bus Booking</a></li>
+                    <li><a href="#">Cab Booking</a></li>
+                    <li><a href="#">Train Ticket Booking</a></li>
+                    <li><a href="#">Goibibo Advertising Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="company">
+                <h5>COMPANY</h5>
+                <ul class="links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Terms of Services</a></li>
+                    <li><a href="#">User Agreement</a></li>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Customer Support</a></li>
+                    <li><a href="#">Corporate Social Responsibility</a></li>
+                    <li><a href="#">Goibibo on Mobile</a></li>
+                    <li><a href="#">Goibibo TV Advertisement</a></li>
+                    <li><a href="#">Technology@Goibibo</a></li>
+                </ul>
+            </div>
+
+            <div class="travel">
+                <h5>TRAVEL RESOURCES</h5>
+                <ul class="links">
+                    <li><a href="#">Popular Bus Routes</a></li>
+                    <li><a href="#">PNR Status</a></li>
+                    <li><a href="#">Airport Cabs</a></li>
+                    <li><a href="#">Rental Cabs</a></li>
+                    <li><a href="#">Hotels in India</a></li>
+                    <li><a href="#">Popular Airlines</a></li>
+                    <li><a href="#">Goibibo Offers</a></li>
+                    <li><a href="#">City Airline Routes</a></li>
+                </ul>
+            </div>
+
+            <div class="morelinks">
+                <h5>MORE LINKS</h5>
+                <ul class="links">
+                    <li><a href="#">Cheap Flights</a></li>
+                    <li><a href="#">Train Running Status</a></li>
+                    <li><a href="#">Flight Schedule</a></li>
+                    <li><a href="#">Popular Bus Citites</a></li>
+                    <li><a href="#">Popular Hotel Chains</a></li>
+                    <li><a href="#">Hotels Near Me</a></li>
+                    <li><a href="#">Advertise with Us</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="city-container">
+            
+            <ul class="list list1">
+              <li>Haridwar To Delhi Cabs</li>
+              <li>Haridwar To Shahjahanpur Cabs</li>
+              <li>Haridwar To Agra Cabs</li>
+              <li>Haridwar To Bareilly Cabs</li>
+              <li>Haridwar To Mumbai Cabs</li>
+              <li>Haridwar To Mussoorie Cabs</li>
+              <li>Haridwar To Pilani Cabs</li>
+              <li>Haridwar To Mathura Cabs</li>
+              <li>Haridwar To Ahmedabad Cabs</li>
+              <li>Haridwar To Dwarka Cabs</li>
+            </ul>
+            <br>
+            <ul class="list list2">
+              <li>Noida To Delhi Cabs</li>
+              <li>Noida To Shahjahanpur Cabs</li>
+              <li>Noida To Agra Cabs</li>
+              <li>Noida To Bareilly Cabs</li>
+              <li>Noida To Mumbai Cabs</li>
+              <li>Noida To Mussoorie Cabs</li>
+              <li>Noida To Pilani Cabs</li>
+              <li>Noida To Mathura Cabs</li>
+              <li>Noida To Auraiya Cabs</li>
+              <li>Noida To Ahmedabad Cabs</li>
+            </ul>
+            <br>            
+            <ul class="list list3">
+              <li>Hyderabad To Delhi Cabs</li>
+              <li>Hyderabad To Shahjahanpur Cabs</li>
+              <li>Hyderabad To Agra Cabs</li>
+              <li>Hyderabad To Bareilly Cabs</li>
+              <li>Hyderabad To Mumbai Cabs</li>
+              <li>Hyderabad To Mussoorie Cabs</li>
+              <li>Hyderabad To Pilani Cabs</li>
+              <li>Hyderabad To Mathura Cabs</li>
+              <li>Hyderabad To Ahmedabad Cabs</li>
+              <li>Hyderabad To Dwarka Cabs</li>
+            </ul>
+            <br>
+            <ul class="list list4">
+              <li>Gandhinagar To Delhi Cabs</li>
+              <li>Gandhinagar To Agra Cabs</li>
+              <li>Gandhinagar To Mumbai Cabs</li>
+              <li>Gandhinagar To Mathura Cabs</li>
+              <li>Gandhinagar To Ahmedabad Cabs</li>
+              <li>Gandhinagar To Dwarka Cabs</li>
+              <li>Gandhinagar To Bhuj Cabs</li>
+              <li>Gandhinagar To Jaisalmer Cabs</li>
+              <li>Gandhinagar To Mount-abu Cabs</li>
+              <li>Gandhinagar To Junagadh Cabs</li>
+            </ul>
+            <br>
+            <ul class="list list5">
+              <li>Goa To Delhi Cabs</li>
+              <li>Goa To Agra Cabs</li>
+              <li>Goa To Bareilly Cabs</li>
+              <li>Goa To Mumbai Cabs</li>
+              <li>Goa To Ahmedabad Cabs</li>
+              <li>Goa To Aligarh Cabs</li>
+              <li>Goa To Ambala Cabs</li>
+              <li>Goa To Manali Cabs</li>
+              <li>Goa To Shimla Cabs</li>
+              <li>Goa To Amritsar Cabs</li>
+            </ul>
+            <br>
+            <ul class="list list6">
+              <li>Chandigarh To Delhi Cabs</li>
+              <li>Chandigarh To Agra Cabs</li>
+              <li>Chandigarh To Bareilly Cabs</li>
+              <li>Chandigarh To Mumbai Cabs</li>
+              <li>Chandigarh To Mussoorie Cabs</li>
+              <li>Chandigarh To Pilani Cabs</li>
+              <li>Chandigarh To Mathura Cabs</li>
+              <li>Chandigarh To Ahmedabad Cabs</li>
+              <li>Chandigarh To Dwarka Cabs</li>
+              <li>Chandigarh To Bhuj Cabs</li>
+            </ul>
+        </div>
+        <hr>
+
+        <div class="follow">
+            <div class="follow_headding">
+              <h4 style="margin: 10px; font-weight: 500;">Book Tickets faster. Download our mobile Apps</h4>
+              <div class="iconss" id="pay" style="margin: 30px;">
+                <img src="https://cdn.freebiesupply.com/logos/large/2x/google-play-badge-logo-black-and-white.png" alt="">
+      
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Download_on_the_App_Store_Badge_CZ_RGB_blk.svg/800px-Download_on_the_App_Store_Badge_CZ_RGB_blk.svg.png" alt="">
+              </div>
+            </div>
+            </div>
+      
+    <div class="logo">
+        <img src="https://www.cnet.com/a/img/resize/fc1bb73b4989690cbf137287f91f5f99b9c13538/hub/2010/07/19/c776c1bb-f0fa-11e2-8c7c-d4ae52e62bcc/VeriSignSSLlogo.png?auto=webp&fit=crop&height=900&width=1200" alt="">
+    
+        <img src="https://cdn2.iconfinder.com/data/icons/business-finance-material-flat-design/24/Pay-With_Amex-512.png" alt="">
+    
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/MasterCard_Logo.svg/1024px-MasterCard_Logo.svg.png" alt="">
+    
+        <img src="https://1000logos.net/wp-content/uploads/2017/06/VISA-Logo-1992.png" alt="">
+    
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7qnfJpOcW6nsoDOdHYotF8S6l5VVAQCt-Yw&s" alt="">
+    
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1yUtfwYgkCNAT8axFeS2eELN9cwsTaKaqBiGDKtqPMn6RJRrkgUFzo1M9YwhJ9THEjTE&usqp=CAU" alt="">
+    </div>
+    </div>
+    </div>
+    
+     <div class="make_my_trip">
+     <div class="make_trip">
+        <hr>
+        <img src="https://www.webintravel.com/wp-content/uploads/2012/05/makemytrip-1066x440.jpg" id="my_trip" alt="">
+    
+        <img src="https://i.pinimg.com/originals/58/91/2b/58912b2e3ad6a279347eebb47751a9c1.png" alt="">
+     </div>
+    </div>
+
+        
+    </footer>
+
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

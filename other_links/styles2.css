@@ -1,0 +1,1064 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Rubik;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f56a00;
+}
+.logo img{
+    width: 110px;
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    font-size: 25px;
+}
+
+.nav-item .icon {
+    margin-right: 5px;
+}
+
+.user-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 50px;
+}
+.user-section a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+
+.login {
+    display: flex;
+    background-color: white;
+    border: 2px solid #0077ff;
+    color: black;
+    padding-bottom: 10px;
+    padding-right:10px ;
+    padding-left: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.login-btn span {
+    position: relative;
+    top: 7px;
+    text-align: center;
+    color: #0077ff;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+/* HEADING */
+.heading{
+    margin-top: 70px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f56a00;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.sub-heading{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.sub-heading h3{
+    font-weight: 600;
+}
+
+/* trains booking section */
+.trains{
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.booking{
+    margin: 10px;
+    width: 70%;
+    height: 230px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.radio-container{
+    position: relative;
+    top:18px;
+    left: 45px;
+    margin: 10px;
+}
+.form-group{
+    margin: 10px;
+   position : relative;
+    padding: 40px;
+    z-index: 120;
+}
+fieldset{
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.form-group fieldset input{
+    font-weight: 700;
+    font-size: larger;
+}
+fieldset input:hover{
+    border: 1px solid black;
+}
+
+.form-group input{
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.booking .search-button{
+    position: relative;
+    top: 10px;
+    left: 36%;
+    width: 250px;
+    height: 60px;
+    color: white;
+    font-weight: 800;
+    font-size: medium;
+    border-radius: 40px;
+    background: #E27826;
+    border: none;
+}
+
+.booking .search-button:hover{
+    background: #e6690a;
+    color: white;
+}
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #ffffff;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .user-section {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .form-group input,
+    .calendar,
+    select {
+        width: 100%;
+    }
+
+    .swap-icon {
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+}
+
+
+
+
+
+
+/* pardnya's css code */
+section{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.benefits-container {
+    padding: 40px 20px;
+    /* background-color: #e9f1fc; */
+}
+
+.benefits-container h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.benefits-container p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.benefit {
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.benefit:hover {
+    transform: scale(1.05);
+}
+
+.benefit img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 20px;
+}
+
+.benefit h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.benefit a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.benefit a:hover {
+    text-decoration: underline;
+}
+
+/* Offers section starts */
+
+.vacation-container {
+    padding: 20px;
+    background-color:#fff;
+    margin: 80px;
+    width:80%;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    border-bottom:0.5px solid rgb(219, 191, 245);
+}
+.tabs .offer{
+    text-decoration:underline;
+    text-decoration-color: #007bff;
+    
+}
+
+.tabs .tab {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+
+}
+.tabs::-webkit-scrollbar{
+    display: none;
+}
+
+.tabs .tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: #007bff;
+}
+
+.slider {
+    position: relative;
+}
+
+.offers-cards {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 50px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.offers-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.offer-card {
+    /* display: flex; */
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 250px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.offer-card:hover {
+    transform: scale(1.05);
+}
+
+.offer-card img {
+    
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.offer-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.offer-details .bold-text{
+    font-weight: bold;
+}
+
+.offer-details p {
+    margin: 2px 0;
+    color: #333;
+    font-weight: lighter;
+    font-size: small;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.slider .prev {
+    left: 10px;
+}
+
+.slider .next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .offer-card {
+        width: 80%;
+    }
+}
+
+
+/* Railway inquiry css */
+
+.inquiry-container {
+    padding: 30px 20px;
+    background-color: #e9f1fc;
+    text-align: center;
+    
+}
+.container5{
+    background-color: #b5d1f0;
+    padding-bottom: 40px;
+}
+.container5 .railway{
+    background-color: #b5d1f0;
+    padding:20px;
+    margin-top: 10px;
+}
+
+.inquiry-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.inquiry-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.inquiry-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 250px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.inquiry-card:hover {
+    transform: scale(1.05);
+}
+
+.inquiry-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.inquiry-card p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.inquiry-card a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+.inquiry-card a .arrow {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.inquiry-card a:hover .arrow {
+    transform: translateX(5px);
+}
+
+/* Book Meals for train css */
+
+.meal-container{
+    width:80%;
+    padding: 30px 20px;
+    margin: 60px;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    
+}
+
+.bookmeal-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bookmeal-grid img{
+    width: 10%;   
+}
+
+.bookmeal-card .head{
+    font-weight:bolder;
+    padding: 10px;
+    margin: 10px;
+}
+
+.bookmeal-card .para{
+    font-weight: bolder;
+}
+
+.container6 .btn1{
+    display: inline-block;
+    border:1px solid rgb(117, 110, 108);
+    border-radius: 10px;
+    padding: 15px;
+    background-color:rgb(245, 93, 37);
+    color: white;
+    text-decoration: none;
+}
+
+
+/* IRCTC Settings css */
+
+.irctc-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:80vw;
+    height: 30vh;
+    margin: 50px;
+    background-color:white;
+    border-radius: 10px;
+  }
+  .irctc-container .irctc-heading {
+
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card .icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+  }
+  
+  .title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+    .fa-arrow-right {
+    background-color:rgb(86, 86, 229);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+  }
+
+  /* Goibibo ticket css */
+  .ticket-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+}
+
+.features-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.features-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 1em;
+    color: #333;
+}
+.features-table .bold {
+    font-weight: bold;
+}
+.features-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* sponsered Advertise css */
+
+.sponsored-ad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #fff; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    padding: 20px;
+    border-radius: 15px;
+    margin: 30px 110px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+.sponsored-ad img {
+    height: 100px;
+    border-radius: 10px;
+}
+
+
+/* sonu kumar css code */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background: #eff8f8;
+    height:800vh;
+}
+
+.trains_footer_path{
+    width: 95vw;
+  margin: 0 auto;
+  background: white;
+}
+
+.ticket_par{
+    font-size: 15px;
+  color: #84a3a3;
+  padding: 5px 15px 20px 15px;
+}
+
+.footer_headding{
+    padding: 18px 0 0 15px;
+  font-size: 21px;
+}
+
+.id_card{
+  color: #84a3a3;
+  font-size: 15px;
+  padding-left: 48px;
+  /* padding-bottom: 21px; */
+}
+ol li{
+  padding-bottom: 10px;
+}
+a{
+    text-decoration:none ;
+}
+
+#footer_headding{
+  font-size: 17px;
+}
+
+.faqs{
+  width: 95vw;
+  margin: 24px auto;
+  font-size: 23px;
+}
+
+.online_ticket{
+  width: 95vw;
+  background: white;
+  margin: 0px auto;
+  padding-left: 72px;
+  padding-top: 63px;
+  padding-bottom: 52px;
+  margin-top: 26px;
+  padding-right: 17px;
+}
+
+.online_headding{
+  font-size: 29px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book_para{
+  padding-bottom: 37px;
+  color: #363b7f;
+  font-size: 21px;
+}
+
+.visit_online{
+  padding-left: 17px;
+  font-size: 16px;
+  color: #a27b3f;
+}
+
+.why{
+  width: 95vw;
+  margin: 0 auto;
+    margin-top: 0px;
+  margin-top: 23px;
+  background: white;
+  padding: 0 53px;
+}
+
+.why_headding{
+  font-size: 13px;
+  padding-top: 54px;
+  padding-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.why_para{
+  padding-bottom: 50px;
+}
+
+.icons{
+  font-size: 19px;
+  color: blue;
+}
+
+.popular_trains{
+  width: 95vw;
+  background: white;
+  margin: 0 auto;
+    margin-top: 0px;
+  margin-top: 27px;
+  padding-left: 42px;
+  padding-bottom: 29px;
+  padding-right: 67px;
+}
+
+.popular_headding{
+  padding: 30px 0;
+}
+
+.train_icons{
+  font-size: 25px;
+  color: darkslateblue;
+}
+
+.via{
+  font-size: 20px;
+  font-weight: bold;
+  color: #16bb9c;
+}
+
+a{
+  font-size: 20px;
+}
+
+.shedule{
+  font-size: 20px;
+  padding-left: 3px;
+}
+
+.train_journey{
+  padding-bottom: 15px;
+}
+
+.our_ticket{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* footer area */
+footer {
+  background-color:white;
+  padding: 20px 0;
+  width: 95vw;
+  margin: 35px auto 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
+  padding: 0 20px;
+}
+
+.footer-column {
+  /* flex: 1; */
+  /* min-width: 200px; */
+  margin: 10px 0;
+}
+
+.footer-column h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  color: #000;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #007BFF;
+  font-size: 16px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------
+-------------------- */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+  width: 95vw;
+  background: white;
+  margin:0px auto;
+}
+
+.section {
+  /* background-color: #fff; */
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  margin: 10px;
+  padding: 20px;
+  width: calc(25% - 40px);
+  box-sizing: border-box;
+}
+
+.section h2 {
+  margin-top: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section ul li {
+  margin: 5px 0;
+  color: #cf1b1b;
+}
+
+.section ul li a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.section ul li a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1200px) {
+  .section {
+      width: calc(33.33% - 40px);
+  }
+}
+
+@media (max-width: 900px) {
+  .section {
+      width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+      width: calc(100% - 40px);
+  }
+}
+
+/* ---------------------------------
+--------------------------------- */
+
+.book_flight_ticket{
+  /* width: 75vw; */
+  background-color: white;
+}
+
+.follow{
+  padding-top: 13px;
+}
+
+.eco_class{
+  width: 90vw;
+margin: 0 auto;
+padding: 0 14px;
+}
+
+.iconss{
+  padding-top: 10px;
+font-size: 25px;
+color: #19b7a8;
+}
+
+.iconss i{
+  padding-right: 5px;
+}
+
+.follow_headding{
+  font-weight: 900;
+}
+
+.iconss img{
+  width: 9rem;
+height: 2rem;
+}
+
+.logo img{
+  width: 6rem;
+height: 3rem;
+/* padding-top: 30px; */
+}
+
+.eco_class{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 33px;
+  flex-wrap: wrap;
+}
+
+hr{
+  width: 88rem;
+margin: 0 auto;
+color: antiquewhite;
+}
+
+.make_my_trip{
+  background-color: white;
+}
+
+.make_trip{
+  /* background-color: white; */
+  width: 90rem;
+margin: 0 auto;
+padding-bottom: 43px;
+}
+
+.make_trip img{
+  width: 57px;
+height: 46px;
+margin-left: 23px;
+}
+
+#my_trip{
+  width: 149px;
+height: 54px;
+}
+
+@media (max-width: 1200px) {
+    
+    .benefits-container .benefits-grid{
+        flex-direction: column;
+    }
+    .offers-cards{
+        flex-direction:column;
+        align-items: center;
+    }
+    .inquiry-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+    .irctc-container{
+        
+    }
+    /* Add more specific adjustments as needed */
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+/* Animation Classes */
+.animate-fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Existing CSS content */
+/* NAVBAR */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 2px 20px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}

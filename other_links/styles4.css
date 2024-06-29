@@ -1,0 +1,818 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Rubik;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2px 20px;
+    
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f56a00;
+}
+.logo img{
+    width: 110px;
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    font-size: 25px;
+}
+
+.nav-item .icon {
+    margin-right: 5px;
+}
+
+.user-section {
+    display: flex;
+    flex-direction: cl;
+    align-items: center;
+    padding-right: 50px;
+}
+.user-section a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+
+.login {
+    display: flex;
+    background-color: white;
+    border: 2px solid #0077ff;
+    color: black;
+    padding-bottom: 10px;
+    padding-right:10px ;
+    padding-left: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.login-btn span {
+    position: relative;
+    top: 7px;
+    text-align: center;
+    color: #0077ff;
+}
+.nav-links a:hover{
+    color: #E27826;
+}
+.user-section .mytrip:hover{
+    color: #E27826;
+}
+.user-section .login a:hover{
+    color: #E27826;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* HEADING */
+.heading{
+    text-align: center;
+    padding: 20px;
+    background-color: #2276E3;
+    color: white;
+
+}
+
+/* bus */
+.bus{
+
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+
+.booking{
+    margin: 10px;
+    width: 40%;
+    height: 280px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 40px;
+}
+
+label{
+    font-weight: 600;
+}
+.form-group label{
+    margin: 5px;
+}
+
+.form-group input{
+    width: 50%;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.date-time{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 8px;
+}
+.date-time input{
+    width: 100%;
+}
+
+.booking .search-button{
+    position: relative;
+
+    left: 30%;
+    width: 250px;
+    height: 60px;
+    color: white;
+    font-weight: 800;
+    font-size: medium;
+    border-radius: 40px;
+    background: #E27826;
+    border: none;
+}
+
+.booking .search-button:hover{
+    background: #e6690a;
+    color: white;
+}
+
+/* advertisement */
+.advertise img{
+    height: 30%;
+}
+.advertise {
+    background: url(https://gos3.ibcdn.com/vacc_bg-1642578583.png) center center / cover no-repeat rgb(255, 255, 255);
+    width: 80%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    border-radius: 8px;
+    padding: 20px;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.ad-icon {
+    margin-right: 20px;
+}
+
+.ad-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.ad-content h2 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.ad-content p {
+    margin: 5px 0 0;
+    font-size: 1em;
+    opacity: 0.8;
+}
+
+
+
+/* cards */
+.right-container{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-container {
+    display: flex;
+    margin-top: 5px;
+    overflow-x: auto;
+    gap: 10px;
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 0 0 auto;
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.card h6 {
+    margin: 10px 0;
+}
+
+.card p {
+    color: #555;
+    font-size: 12px;
+}
+
+.arrow-icon{
+    cursor: pointer;
+    height: 50px;
+    position: relative;
+    right: 30px;
+    bottom: 0;
+    color: #0077ff;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+
+ /* footer */
+ footer{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  
+  footer .pageinfo{
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 0;
+    padding: 0px 200px;
+  }
+  footer h5{
+    font-size: medium;
+    margin-bottom: 10px;
+    
+  }
+
+
+  .company,.ourproduct,.travel,.morelinks{
+    margin-bottom: 20px;
+  }
+  .links {
+    list-style: none;
+
+  }
+  .links li {
+    margin-bottom: 10px;
+    font-size: 13px;
+  }
+  .links a {
+    text-decoration: none;
+    color: blue;
+  }
+  .links a:hover {
+    color: #f56a00;
+  }
+
+/* AMAZON AD */
+.amazon-ad{
+    margin: 50px;
+    width:95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+.amazon-ad img{
+    border-radius: 20px;
+}
+
+
+
+/* government bus  */
+.gov-main-container{
+    display: flex;
+    justify-content: center;
+}
+
+.govt-container{
+    display: flex;
+    overflow-x: auto;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.bus-card {
+    min-width: 200px;
+    text-align: center;
+    padding: 20px;
+    margin: 0 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.bus-card img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.bus-card h3 {
+    margin-bottom: 5px;
+}
+
+.bus-card p {
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+
+
+
+/* popular bus routes */
+.popularbus-container {
+    width: 50%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .popularbus-container h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .popularbus-container .bus-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .popularbus-container .bus-item {
+    width: 30%;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .popularbus-container .bus-icon {
+    display: inline-block;
+    margin-bottom: 10px;
+  } 
+  
+  .popularbus-container .bus-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .popularbus-container .bus-destinations {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .popularbus-container .bus-destinations a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .popularbus-container .bus-destinations a:hover {
+    text-decoration: underline;
+  }
+
+
+
+/* BUS OPERATOR  */
+.busoperator-container{
+    max-width:1350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.busoperator-container h3{
+    margin-bottom: 10px;
+}
+
+.busoperator-container a{
+    text-decoration: none;
+    color: blue;
+    padding: 5px 8px;
+}
+
+
+
+
+
+/* Online cab Booking on goibibo */
+.first-container {
+    max-width:1350px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Add this to make the content scrollable */
+    height: 700px; /* Set a fixed height for the box */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.first-container h1, h2, h3 {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.first-container p {
+    line-height: 1.6;
+    padding: 5px;
+}
+
+
+
+
+
+
+/* cabs-booking faq */
+.cabsbooking-container {
+    width: 70%;
+    margin: 50px auto;
+    padding: 20px;
+    /* background-color: #f4f4f4; */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .cabsbooking-container h1 {
+    /* text-align: center; */
+    margin-bottom: 20px;
+  }
+  
+  .cabsbooking-container h2 {
+    font-size: medium;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .cabsbooking-container a{
+    text-decoration: none;
+  }
+  
+  .cabsbooking-container p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+  }
+
+
+
+
+
+
+
+
+
+  /* city-cntainer */
+  .city-container {
+    width: 70%;
+    background-color: #fff;
+    padding: 10px 40px;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* .title {
+    
+    font-weight: bold;
+    margin-bottom: 10px;
+  } */
+   .list1::before{
+    content: "Cabs from Haridwar";
+    font-size: 10px;
+    font-weight: bold;
+   }
+
+   .list2::before{
+    content: "Cabs from Noida";
+    font-size: 10px;
+    font-weight: bold;
+   }
+
+   .list3::before{
+    content: "Cabs from Hydrerabad";
+    font-size: 10px;
+    font-weight: bold;
+   }
+
+   .list4::before{
+    content: "Cabs from Gandhinagar";
+    font-size: 10px;
+    font-weight: bold;
+   }
+
+   .list5::before{
+    content: "Cabs from Goa";
+    font-size: 10px;
+    font-weight: bold;
+   }
+
+   .list6::before{
+    content: "Cabs from Chandigarh";
+    font-size: 10px;
+    font-weight: bold;
+   }
+
+   
+  
+  .list {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    color: #C6C6C6;
+    cursor: pointer;
+  }
+  
+  .list li {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-size: 10px;
+  }
+
+
+
+/* sonu footer icons*/
+.follow{
+    padding-top: 13px;
+    padding-bottom: 10px;
+    
+}
+
+.eco_class{
+    width: 90vw;
+  margin: 0 auto;
+  padding: 0 14px;
+}
+.iconss{
+    padding-top: 10px;
+    font-size: 25px;
+    color: #19b7a8;
+    width: 5px;
+    display: inline;
+}
+
+.iconss i{
+    padding-right: 5px;
+}
+
+.follow_headding{
+    font-weight: 900;
+}
+
+.iconss img{
+    width: 9rem;
+  height: 2rem;
+}
+
+.logo img{
+    width: 6rem;
+  height: 3rem;
+  /* padding-top: 30px; */
+}
+
+.eco_class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 33px;
+    flex-wrap: wrap;
+}
+
+hr{
+    width: 88rem;
+  margin: 0 auto;
+  color: antiquewhite;
+}
+
+.make_my_trip{
+    background-color: white;
+}
+
+.make_trip{
+    /* background-color: white; */
+    width: 90rem;
+  margin: 0 auto;
+  padding-bottom: 43px;
+}
+
+.make_trip img{
+    width: 57px;
+  height: 46px;
+  margin-left: 23px;
+}
+
+#my_trip{
+    width: 149px;
+  height: 54px;
+}
+hr{
+    border-top: 1px solid #C6C6C6;
+    
+}
+
+* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #ffffff;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .user-section {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .form-group input,
+    .calendar,
+    select {
+        width: 100%;
+    }
+
+    .swap-icon {
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .heading h2 {
+        font-size: 16px;
+    }
+
+    .form-group input,
+    .calendar,
+    select {
+        font-size: 14px;
+    }
+
+    .search-button {
+        height: 50px;
+        font-size: 16px;
+    }
+    .hotels{
+        flex-direction: column;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #ffffff;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .user-section {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .form-group input,
+    .calendar,
+    select {
+        width: 100%;
+    }
+
+    .swap-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading h2 {
+        font-size: 16px;
+    }
+
+    .form-group input,
+    .calendar,
+    select {
+        font-size: 14px;
+    }
+
+    .search-button {
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .pageinfo{
+        flex-direction: column;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation Classes */
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}

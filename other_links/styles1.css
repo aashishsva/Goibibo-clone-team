@@ -1,0 +1,1114 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Rubik;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+}
+
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f56a00;
+}
+.logo img{
+    width: 110px;
+    height: 40px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-item {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333333;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.icon{
+    font-size: 25px;
+}
+
+.nav-item .icon {
+    margin-right: 5px;
+}
+
+.user-section {
+    display: flex;
+    flex-direction: cl;
+    align-items: center;
+    padding-right: 50px;
+}
+.user-section a{
+    text-decoration: none;
+    color: black;
+    font-size: small;
+}
+
+.login {
+    display: flex;
+    background-color: white;
+    border: 2px solid #0077ff;
+    color: black;
+    padding-bottom: 10px;
+    padding-right:10px ;
+    padding-left: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-left: 20px;
+}
+.login-btn span {
+    position: relative;
+    top: 7px;
+    text-align: center;
+    color: #0077ff;
+}
+.nav-links a:hover{
+    color: #E27826;
+}
+.user-section .mytrip:hover{
+    color: #E27826;
+}
+.user-section .login a:hover{
+    color: #E27826;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* HEADING */
+.heading{
+    margin-top: 70px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f56a00;
+    color: white;
+}
+
+/* hotels */
+.hotels{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.booking{
+    margin: 10px;
+    width: 30%;
+    height: 300px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 40px;
+}
+
+label{
+    font-weight: 600;
+}
+
+.wherediv{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.form-group .icon{
+    padding-top: 5px;
+    position: absolute;
+    top: 16px;
+    border-radius: 2px;
+}
+.wherediv input{
+    margin-left:26px ;
+}
+
+.form-group input{
+    width: 70%;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.days{
+    display: flex;
+    
+}
+.days .chekin{
+    width: 60%;
+    height: 30px;
+}
+.days .chekout{
+    width: 60%;
+    height: 30px;
+}
+.rooms{
+    margin-top: 40px;
+    font-weight: 600;
+    
+}
+.rooms select{
+    width: 30%;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+
+.booking .search-button{
+    position: relative;
+    top: 30px;
+    left: 20%;
+    width: 250px;
+    height: 60px;
+    color: white;
+    font-weight: 800;
+    font-size: medium;
+    border-radius: 40px;
+    background: #E27826;
+    border: none;
+}
+
+.booking .search-button:hover{
+    background: #e6690a;
+    color: white;
+}
+
+/* cards */
+.cards{
+    display: flex;
+    width: 50%;
+}
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+}
+
+.card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card-content h5 {
+    margin: 0;
+    color: #333;
+}
+
+.card-content p {
+    color: #777;
+    margin: 5px 0 0 0;
+    font-size: 12px;
+}
+.arrow-icon{
+    cursor: pointer;
+    height: 50px;
+    position: relative;
+    top: 90px;
+    right: 35px;
+    bottom: 0;
+    color: #0077ff;
+    background-color: #fff;
+    border-radius: 50px;
+}
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #ffffff;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .user-section {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .form-group input,
+    .calendar,
+    select {
+        width: 100%;
+    }
+
+    .swap-icon {
+        display: none;
+    }
+    .login{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .heading h2 {
+        font-size: 16px;
+    }
+
+    .form-group input,
+    .calendar,
+    select {
+        font-size: 14px;
+    }
+
+    .search-button {
+        height: 50px;
+        font-size: 16px;
+    }
+    .hotels{
+        flex-direction: column;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #ffffff;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-item {
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .user-section {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .form-group input,
+    .calendar,
+    select {
+        width: 100%;
+    }
+
+    .swap-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .heading h2 {
+        font-size: 16px;
+    }
+
+    .form-group input,
+    .calendar,
+    select {
+        font-size: 14px;
+    }
+
+    .search-button {
+        height: 50px;
+        font-size: 16px;
+    }
+}
+
+/* pradnyas's css */
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.container3{
+    margin:10px;
+    padding: 5px;
+}
+
+.hotel-deals-container {
+    padding: 20px;
+    width: 90%;
+    height:75%;
+    background-color: #fff;
+    margin:30px;
+    border-radius:5px;
+}
+
+.hotel-deals-container h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.slider {
+    position: relative;
+}
+
+.offers-cards {
+    
+    display: flex;
+    gap: 20px;
+    /* height:30%; */
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    /* width:100%; */
+}
+
+.offers-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.offer-card {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.offer-card:hover {
+    transform: scale(1.05);
+}
+
+.offer-card img {
+    width: 90%;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+}
+
+.offer-details {
+    padding: 20px;
+    text-align: center;
+}
+
+.offer-details h3 {
+    margin: 10px 0;
+    color: #FF6600;
+    font-size: 18px;
+}
+
+.offer-details p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.offer-details .ratings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.offer-details .ratings span {
+    background-color: #FF6600;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 5px;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.slider .prev {
+    left: 10px;
+}
+
+.slider .next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .offer-card {
+        width: 80%;
+    }
+}
+
+/* Vacation css */
+
+.vacation-container {
+    padding: 20px;
+    background-color:#fff;
+    margin: 30px;
+    width:80%;
+}
+
+/* .container4{
+    background-color:beige;
+    border:1px solid black;
+
+} */
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    overflow-x: scroll;
+    white-space: nowrap;
+    border-bottom:0.5px solid rgb(219, 191, 245);
+}
+
+.tabs .tab {
+    padding: 10px 20px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+
+}
+.tabs::-webkit-scrollbar{
+    display: none;
+}
+
+.tabs .tab.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: #007bff;
+}
+
+.slider {
+    position: relative;
+}
+
+.offers-cards {
+    display: flex;
+    gap: 50px;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+}
+
+.offers-cards::-webkit-scrollbar {
+    display: none;
+}
+
+.offer-card {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    text-align: center;
+}
+
+.offer-card:hover {
+    transform: scale(1.05);
+}
+
+.offer-card img {
+    width: 100%;
+    height: auto;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+.offer-details {
+    padding: 10px;
+    text-align: center;
+}
+
+.offer-details p {
+    margin: 5px 0;
+    color: #333;
+    font-weight: bold;
+}
+
+.slider button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.slider .prev {
+    left: 10px;
+}
+
+.slider .next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .offer-card {
+        width: 80%;
+    }
+}
+
+/* sponsered add css */
+
+.sponsored-ad img {
+    height: 100px;
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-bottom: 30px;
+    width:60%;
+}
+
+
+/* sonu kumars css */
+.popular_destinations {
+    width: 70%;
+    background: white;
+    margin: 0 auto;
+    padding-left: 26px;
+    padding-top: 24px;
+    padding-bottom: 35px;
+}
+
+.popular_headding {
+    padding-bottom: 10px;
+}
+
+.popular_para{
+    margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.both{
+    padding-left: 5px;
+}
+/* -------------------------- */
+
+
+#grid_items {
+    /* width: 30rem; */
+    /* height: 9rem; */
+    /* background: aquamarine; */
+    margin: 6px;
+    border-radius: 40px;
+}
+
+.popular_grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    display: grid;
+    gap: 5px;
+}
+
+.div1{
+    grid-row-start: span 2;
+    height: 47rem;
+} 
+
+.grid_content,.blue_sky{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 100%;
+    align-items: center;
+    padding-bottom: 19px;
+  flex-wrap: wrap;
+    color: white;
+}
+
+#mag1{
+    background-image:url(https://static.independent.co.uk/s3fs-public/thumbnails/image/2015/01/15/12/mumbai_afp.jpg);
+    background-size: cover;
+    border-radius: 40px;
+
+}
+
+#mag2{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJFm154iNPVkQoTgASQGGbEthrghlM39a8bg&s);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+#mag3{
+    background-image:url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2c/07/a8/2c/caption.jpg?w=1400&h=1400&s=1);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+#mag4{
+    background-image:url(https://curioustimes.in/wp-content/uploads/2019/10/Krabi-Thailand.jpg);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+#mag5{
+    background-image:url(https://so-hotels.com/wp-content/uploads/sites/19/2023/06/maldives-intro-azure-coast.jpg);
+    background-size: cover;
+    border-radius: 40px;
+}
+/* ---------------------- */
+
+
+    #dext{
+    /* height: 10rem; */
+  background: blanchedalmond;
+  /* width: 31rem; */
+  margin: 10px;
+  border-radius: 40px;
+}
+
+.nice_detination{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.dive3{
+    grid-row-start: span 2;
+    height: 47rem;
+}
+
+
+#blue-sky1{
+    background-image:url(https://cdn.pixabay.com/photo/2024/05/26/10/15/bird-8788491_1280.jpg);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+#blue-sky2{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREoRGyXmHy_6aIgXYqWHdOT3KjfmnuSyxypw&s);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+#blue-sky3{
+    background-image:url(https://i0.wp.com/picjumbo.com/wp-content/uploads/breathtaking-bali-nature-free-photo.jpg?w=600&quality=80);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+#blue-sky4{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0HZZONB2Xa0AoNJhtiqwQHnRIxFaHUteyaQ&s);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+#blue-sky5{
+    background-image:url(https://t4.ftcdn.net/jpg/06/30/84/15/360_F_630841579_zMXYOcDlyYsEQNsiYhwlA9SMs5STj7mS.jpg);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+/* ------------------------ */
+
+#maga1{
+    background-image:url(https://buffer.com/library/content/images/size/w1200/library/wp-content/uploads/2018/11/free-images-social.png);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+#maga2{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEkA9gblpiJEJfpBwChxch8UVTI4VkPKpkSA&s);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+#maga3{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT0FL9n2Nd0tJiEjoEg9zhZL0pQt9qn5-QrQ&s);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+#maga4{
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdvpjC4RB4djIywy-zDwPG8LMidWcr2Y2Uog&s);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+#maga5{
+    background-image:url(https://stimg.cardekho.com/images/carexteriorimages/930x620/Toyota/Innova-Crysta/9612/1697698611076/front-left-side-47.jpg?impolicy=resize&imwidth=420);
+    background-size: cover;
+    border-radius: 40px;
+}
+
+/* -------------------------- */
+@media (max-width: 600px) {
+    .popular_grid,.nice_detination{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Grid settings for medium screens */
+@media (min-width: 601px) and (max-width: 900px) {
+    .popular_grid,.nice_detination {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+/* Grid settings for large screens */
+@media (min-width: 901px) {
+    .popular_grid,.nice_detination {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* sonu kumar css for fotter */
+
+
+
+
+.about_hotel{
+    background: white;
+  width: 95vw;
+  margin: 0 auto;
+  padding: 0 14px;
+}
+
+.order_list{
+    padding: 0 35px;
+}
+
+#a,#q{
+    padding: 3px 7px;
+    background: #d6e3e3;
+    border-radius: 26px;
+}
+
+.question{
+    padding-bottom: 26px;
+    font-size: 21px;
+}
+
+.ans_headding{
+    padding-bottom: 12px;
+    /* font-size: 21px; 
+    color: rgb(48, 182, 157); */
+}
+
+.order_list ol{
+    list-style: auto;
+  font-size: 20px;
+}
+
+.order_list ol li{
+    padding: 5px 0;
+    color: rgb(48, 182, 157);
+}
+
+.about_hotel h1{
+    padding-bottom: 49px;
+  padding-top: 20px;
+}
+
+.ans{
+    padding-bottom: 18px;
+    display: flex;
+}
+
+hr{
+    color: aliceblue;
+    margin: 30px 0;
+}
+
+.ans_headding{
+    display: flex;
+}
+
+.span{
+    padding-left: 14px;
+}
+
+.graph{
+    padding-left: 13px;
+}
+
+.question{
+    display: flex;
+}
+
+.couple_hotel{
+    padding-left: 13px;
+}
+
+.span3{
+  padding-left: 10px;
+  font-size: 21px; 
+  color: rgb(48, 182, 157);
+}
+
+.covid{
+    font-size: 19px;  
+}
+
+.span{
+    color: rgb(48, 182, 157);
+}
+
+a{
+    text-decoration: none;
+}
+
+.flight_landing_location{
+    background-color: white;
+}
+
+.flight_location{
+    /* background: white; */
+    width: 95vw;
+  margin: 0 auto;
+  padding: 13px 0;
+}
+
+.popular_flight_sec{
+    font-size: 14px;
+    color: #c38888;
+    margin-bottom: 10px;
+}
+
+.para{
+    font-size: 15px;
+  font-weight: 600;
+  padding-right: 11px;
+}
+
+.our_city{
+    padding-top: 21px;
+}
+
+.our_productions,.about_headding,.travels_headding,.more_link_headding{
+    padding-bottom: 9px;
+    font-size: 13px;
+    width: 10vw;
+    padding-top: 21px;
+}
+
+.our_footer_section{
+    display: flex;
+  background: white;
+  /* width: 75vw; */
+  margin-top: 27px;
+  padding: 16px 20px;
+  /* margin: 0 12vw; */
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+
+li{
+    list-style: none;
+    padding-bottom: 7px;
+}
+
+li a{
+    text-decoration: none;
+    font-size: 13.5px;
+    color: #193a3a;
+}
+
+
+.book_flight_ticket{
+    /* width: 75vw; */
+    background-color: white;
+}
+
+.follow{
+    padding-top: 13px;
+}
+
+.eco_class{
+    width: 90vw;
+  margin: 0 auto;
+  padding: 0 14px;
+}
+
+.iconss{
+    padding-top: 10px;
+  font-size: 25px;
+  color: #19b7a8;
+}
+
+.iconss i{
+    padding-right: 5px;
+}
+
+.follow_headding{
+    font-weight: 900;
+}
+
+.iconss img{
+    width: 9rem;
+  height: 2rem;
+}
+
+.logo img{
+    width: 6rem;
+  height: 3rem;
+  /* padding-top: 30px; */
+}
+
+.eco_class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 33px;
+    flex-wrap: wrap;
+}
+
+hr{
+    width: 88rem;
+  margin: 0 auto;
+  color: antiquewhite;
+}
+
+.make_my_trip{
+    background-color: white;
+}
+
+.make_trip{
+    /* background-color: white; */
+    width: 90rem;
+  margin: 0 auto;
+  padding-bottom: 43px;
+}
+
+.make_trip img{
+    width: 57px;
+  height: 46px;
+  margin-left: 23px;
+}
+
+#my_trip{
+    width: 149px;
+  height: 54px;
+}
+
+@media only screen and (max-width: 667px) {
+  
+    .our_footer_section{
+        flex-direction: column;
+        /* align-items: center; */
+        text-align: center;
+    }
+
+    .our_productions,.about_headding,.travels_headding,.more_link_headding{
+        padding-bottom: 9px;
+        /* font-size: 13px; */
+        color: #422020;
+        margin: 0 auto;
+        padding-top: 21px;
+    }
+
+    .footer_content{
+        padding-bottom: 20px;
+    }
+
+    .travels_headding,.more_link_headding{
+        padding-top: 15px;
+    }
+
+    li {
+        list-style: none;
+        padding-bottom: 5px;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation Classes */
+.animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Existing CSS content */
+/* NAVBAR */
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
